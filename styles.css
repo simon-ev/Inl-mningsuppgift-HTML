@@ -14,8 +14,10 @@
     --color-gray-100: #F3F6FF;
     --color-white: #fff;
 
+   
+
     --container-padding: 1rem;
-    -o-transition-time: all 0.2s;
+    --transition-time: all 0.2s;
 
     --br-m: 0.375em;
     --br-l: 0.5em;
@@ -23,6 +25,7 @@
     --color-text-body: var(--color-gray-700);
     --color-text-heading: var(--color-dark);
 
+    --section-spacing: 4rem;
 
 }
 
@@ -78,6 +81,28 @@ a:hover {
     text-decoration: underline;
 }
 
+.btn-round {
+    display: flex;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btn-white {
+    background-color: var(--color-white);
+    color: var(--color-gray-800);
+    box-shadow: 0 0 2px var(--color-dark);
+    
+}
+
+.btn-white:hover {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
 .active {
     color: var(--color-primary);
     text-decoration: underline;
@@ -104,11 +129,6 @@ a:hover {
     margin-right: 0.5rem;
 }
 
-/* .btn-mobile {
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-} */
 
 .btn-toggle-switch {
     display: flex;
@@ -178,6 +198,11 @@ a:hover {
     padding-right: var(--container-padding);
     margin-left: auto;
     margin-right: auto;
+     
+    img {
+        display: block;
+        width: 100%;
+    }
 }
 
 header .container {
@@ -191,57 +216,45 @@ header .container {
     margin-right: 312px; */
 }
 
-
-
-/* @media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-        
-    }
-
-    .btn-toggle-switch .label {
-        display: block;
-    }
-
-    header .container {
-        gap: 2rem;     
-    }
-} */
-
 @media (min-width: 1400px) {
     .container {
-        max-width: 1320px;
-        
+        max-width: 1320px;     
     }
 
-   /* .navbar {
-    display: block;
-   }  */
 
     header .container {
         grid-template-columns: auto 1fr auto auto;
         gap: 3rem;     
     }
 
-    /* .showcase { 
-        /* max-width: 1320px; */
-        /* grid-template-columns: auto; */
-        /* gap: 3rem; */
-    
+     
 }
 
 
 
 .showcase {
     padding-top: 6rem;
+    /* padding-left: 19.5rem;
+    padding-right: 19.5rem; */
+    padding-bottom: 4rem;
     text-align: center;
     background-color: var(--color-white);
     background-image: linear-gradient(to top, rgba(99, 101, 241, 0.100), rgba(219, 70, 239, 0.050) 42%, rgba(241, 244, 253, 0.070) 83%);
-    
-    .market-btns {
+    flex-direction: column;
+        
+    .d4 {
         display: flex;
-        flex-direction: column;
+        line-height: 1em;
+        left: 0;
+        /* margin-top: ; */
+        text-align: left;
+    }
+
+    .market-btns {       
         gap: 1rem;
+        flex-direction: row;
+        padding-top: 1em;
+        display: flex;        
     }
 
     .store-btn {
@@ -249,12 +262,54 @@ header .container {
         width: 180px;
         padding: .5em 1em;
         border-radius: var(--br-l);
+        
 
-        img {
-            height: 3em;
+    }
+
+    @media (min-width: 1400px) {
+        .frontpage-container {
+            /* margin-left: 312px; */
+            
+            position: relative;
+            
+            display: flex;
+            
+        }    
+    
+        
+
+        .content {
+            /* padding-top: 20rem; */
+            text-align: start;
+            display: block;
+            margin: 20px; 
         }
+        
+        .more {
+            justify-content: flex-start;
+        }
+
+        .phone-img-container {
+            padding-top: 5rem;
+            display: block;
+            width: 60%;
+            position: relative;
+            top: auto;
+            bottom: 0;
+            right: 0;
+            /* float: right; */    
+        }
+        
+    .more {
+         display: flex;
+         align-items: center;
+         justify-content: left;
+         gap: 1rem;
+            
     }
 }
+}
+
 
 
 /* h1, h2, h3, h4, h5 {
@@ -269,9 +324,7 @@ ol, ul {
     list-style: none;
 }
 
-.space-y-2 > * + * {
-    margin-top: 2rem;
-}
+
 
 .sr-only {
     position: absolute;
@@ -289,10 +342,11 @@ ol, ul {
     font-size: 3.5rem;
     color: var(--color-text-heading);
     font-weight: 800;
+    
 }
 
-img {
-    display: block;
-    width: 100%;
-}
+
+
+
+
 
