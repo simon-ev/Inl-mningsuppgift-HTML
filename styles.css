@@ -169,7 +169,7 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--color-gray-700);    
+    background-color: var(--color-gray-600);    
     transition: all 0.2s;
 }
 
@@ -233,27 +233,34 @@ header .container {
 
 
 .showcase {
-    padding-top: 6rem;
-    /* padding-left: 19.5rem;
-    padding-right: 19.5rem; */
-    padding-bottom: 4rem;
+    display: block;
+    padding-top: 10rem;
+    padding-left: 19.5rem;
+    padding-right: 19.5rem;
     text-align: center;
     background-color: var(--color-white);
     background-image: linear-gradient(to top, rgba(99, 101, 241, 0.100), rgba(219, 70, 239, 0.050) 42%, rgba(241, 244, 253, 0.070) 83%);
-    flex-direction: column;
+    /* flex-direction: column; */
+    /* margin-left: 320px;
+    margin-right: 320px;
+     */
+    
         
     .d4 {
-        display: flex;
-        line-height: 1em;
-        left: 0;
-        /* margin-top: ; */
+        
+        width: 500px;
+        margin-bottom: 0.4em;
+        display: block;
+        line-height: 1.3em;     
         text-align: left;
+        position: relative;
+                    
     }
 
     .market-btns {       
         gap: 1rem;
         flex-direction: row;
-        padding-top: 1em;
+        padding-top: 3em;
         display: flex;        
     }
 
@@ -263,41 +270,44 @@ header .container {
         padding: .5em 1em;
         border-radius: var(--br-l);
         
+    }
 
+    .text-large {
+        
+        font-size: 115%;
+        width: 35%;
+        text-align: start;
+        display: block;
     }
 
     @media (min-width: 1400px) {
         .frontpage-container {
             /* margin-left: 312px; */
             
-            position: relative;
+            /* position: relative;
             
-            display: flex;
+            display: block; */
             
         }    
     
         
 
         .content {
+            
             /* padding-top: 20rem; */
-            text-align: start;
-            display: block;
-            margin: 20px; 
+            
+            
         }
-        
-        .more {
-            justify-content: flex-start;
-        }
+               
 
         .phone-img-container {
-            padding-top: 5rem;
+            
             display: block;
             width: 60%;
             position: relative;
-            top: auto;
-            bottom: 0;
-            right: 0;
-            /* float: right; */    
+            top: -400px;
+            left: 33.5rem;
+            
         }
         
     .more {
@@ -341,7 +351,7 @@ ol, ul {
 .d4 {
     font-size: 3.5rem;
     color: var(--color-text-heading);
-    font-weight: 800;
+    font-weight: 900;
     
 }
 
