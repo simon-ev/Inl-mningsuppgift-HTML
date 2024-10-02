@@ -20,7 +20,7 @@
     --transition-time: all 0.2s;
 
     --br-m: 0.375em;
-    --br-l: 0.5em;
+    --br-l: 0.7em;
 
     --color-text-body: var(--color-gray-700);
     --color-text-heading: var(--color-dark);
@@ -112,7 +112,7 @@ a:hover {
     background-color: var(--color-primary);
     color: var(--color-white);
     border-radius: 8px;
-    padding: 12px 25px;
+    padding: 6px 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,24 +230,24 @@ header .container {
      
 }
 
-
+.frontpage-container {
+    padding-left: 19.5rem;
+    padding-right: 19.5rem;
+    max-height: 823px;
+    background-color: var(--color-white);
+    background-image: linear-gradient(to top, rgba(99, 101, 241, 0.100), rgba(219, 70, 239, 0.050) 42%, rgba(241, 244, 253, 0.070) 83%);
+}
 
 .showcase {
     display: block;
-    padding-top: 10rem;
-    padding-left: 19.5rem;
-    padding-right: 19.5rem;
+    /* padding-left: 19.5rem;
+    padding-right: 19.5rem; */
     text-align: center;
-    background-color: var(--color-white);
-    background-image: linear-gradient(to top, rgba(99, 101, 241, 0.100), rgba(219, 70, 239, 0.050) 42%, rgba(241, 244, 253, 0.070) 83%);
-    /* flex-direction: column; */
-    /* margin-left: 320px;
-    margin-right: 320px;
-     */
+    
     
         
     .d4 {
-        
+        padding-top: 10rem;
         width: 500px;
         margin-bottom: 0.4em;
         display: block;
@@ -258,18 +258,25 @@ header .container {
     }
 
     .market-btns {       
-        gap: 1rem;
+        gap: 1.5rem;
         flex-direction: row;
         padding-top: 3em;
-        display: flex;        
+        display: flex;    
+         
+        
     }
 
     .store-btn {
         background-color: var(--color-dark);
         width: 180px;
-        padding: .5em 1em;
+        padding: .2em 1em;
         border-radius: var(--br-l);
         
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     .text-large {
@@ -280,60 +287,39 @@ header .container {
         display: block;
     }
 
-    @media (min-width: 1400px) {
-        .frontpage-container {
-            /* margin-left: 312px; */
-            
-            /* position: relative;
-            
-            display: block; */
-            
-        }    
-    
-        
 
-        .content {
-            
-            /* padding-top: 20rem; */
-            
-            
-        }
-               
-
-        .phone-img-container {
-            
-            display: block;
-            width: 60%;
-            position: relative;
-            top: -400px;
-            left: 33.5rem;
-            
-        }
-        
     .more {
-         display: flex;
-         align-items: center;
-         justify-content: left;
-         gap: 1rem;
-            
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 1rem;
+        max-width: 50%;
+        padding-top: 13em;    
     }
-}
-}
 
-
-
-/* h1, h2, h3, h4, h5 {
-    text-wrap: balance;
-    color: var(--color-text-heading);
-    font-weight: 800;
-    line-height: 1.3;
-} */
-
-
-ol, ul {
-    list-style: none;
+    .phone-img-container {
+            
+        display: block;
+        
+        position: absolute;
+        top: 180px;
+        right: 315px;
+        
+    }
+    
+    
 }
 
+.logos-p {
+        
+    margin-top: 147px;
+    
+    img {
+        height: 100%;
+        width: 100%;
+    }
+    
+}
 
 
 .sr-only {
